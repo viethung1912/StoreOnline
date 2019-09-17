@@ -3,6 +3,8 @@ package com.experiment.hts.storedecor.view.fragment;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -64,11 +66,30 @@ public class HomeFragment extends Fragment {
         txtAll = root.findViewById(R.id.txtAll);
         swipeRefreshLayout = root.findViewById(R.id.swipeRefreshLayout);
 
+        FindProduct();
         productController = new ProductController(getActivity());
         productController.getListProductController(getActivity(), recyclerProducts, nestedScrollViewContainerHome, progressbarLoadProduct, txtAll, swipeRefreshLayout);
         productController.getSlideShow(avfSlideshow);
 
         return root;
+    }
+
+    private void FindProduct() {
+        edtFindProduct.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+            }
+        });
     }
 
     @Override
