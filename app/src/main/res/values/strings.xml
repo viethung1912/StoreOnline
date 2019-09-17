@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">StoreDecor</string>
+    <string name="home">Trang  chủ</string>
+    <string name="user">Cá nhân</string>
+    <string name="category">Danh mục</string>
+    <string name="notification">Thông báo</string>
+    <string name="find">Hôm nay bạn tìm gi...</string>
+    <string name="all">Tất cả</string>
+</resources>
